@@ -13,19 +13,20 @@ const Curso = ({title, image, price, profesor}) =>(
         {`Prof.: ${profesor}`}
    </div>
     <div className="s-main-center">
-      <a className="button--ghost-alert button--tiny" href="#">{ price }</a>
+      <a className="button--ghost-alert button--tiny" href="https://ed.team">{ price }</a>
     </div>
   </div>
 </article>
 )
 
-Curso.protoTypes = {
+//se esta esperando
+Curso.propTypes = {
      title: PropTypes.string,
      image: PropTypes.string,
      price: PropTypes.number,
      profesor: PropTypes.string,
 }
-
+//si no se recibe nada , toma esto por default
 Curso.defaultProps = {
      title: "No se encontro título",
      image: "https://ed.team/static/images/logo/logo-premium-alt.svg",
