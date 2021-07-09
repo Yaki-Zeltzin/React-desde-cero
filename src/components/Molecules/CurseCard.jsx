@@ -26,7 +26,7 @@ const CurseCard = ({id,title, image, price, professor}) =>(
 CurseCard.propTypes = {
      title: PropTypes.string,
      image: PropTypes.string,
-     price: PropTypes.number,
+     price: PropTypes.string,
      professor: PropTypes.string,
 }
 //si no se recibe nada , toma esto por default
